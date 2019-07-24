@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+   <servlet>
+        <servlet-name>/Pipeline/upload</servlet-name>
+        <servlet-class>/Pipeline/upload</servlet-class>
+        
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>/Pipeline/upload</servlet-name>
+        <url-pattern>/home/assc/priyanka</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/Pipeline/download</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+        <servlet-name>/Pipeline/download</servlet-name>
+        <servlet-class>/Pipeline/download</servlet-class>
+
+</servlet>
+<servlet-mapping>
+        <servlet-name>pipeline</servlet-name>
+        <url-pattern>/Pipeline/pipeline</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+        <servlet-name>/Pipeline/pipeline</servlet-name>
+        <servlet-class>/Pipeline/pipeline</servlet-class>
+
+</servlet>
+
+
+  <servlet-mapping>
+        <servlet-name>download1</servlet-name>
+        <url-pattern>/Pipeline/download1</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+        <servlet-name>/Pipeline/download1</servlet-name>
+        <servlet-class>/Pipeline/download1</servlet-class>
+
+</servlet>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
